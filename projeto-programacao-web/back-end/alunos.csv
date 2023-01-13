@@ -1,0 +1,9 @@
+NOVO_ID 11
+d,nome,idade,turma,texto_url,desenho_url
+3,Juan,10,"4 serie",textos/3.txt,desenhos/3.png
+4,Renato,9,"4 serie",textos/4.txt,desenhos/4.png
+5,Thallys,9,"4 serie",textos/5.txt,desenhos/5.png
+7,aa,12,123,textos/7.txt,desenhos/7.png
+8,aa,12,123,textos/8.txt,desenhos/8.png
+9,aa,12,123,textos/9.txt,desenhos/9.png
+10,Juan,11,12,textos/10.txt,desenhos/10.png

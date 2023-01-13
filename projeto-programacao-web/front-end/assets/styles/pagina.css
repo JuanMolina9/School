@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: 'Bubblegum Sans', cursive;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.texto {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.centralizar-horizontal {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    min-height: 100vh;
+    padding-top: 120px;
+}
+
+.container::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../imgs/background.jpg');
+    background-size: cover;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.cabecalho {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    height: 120px;
+    width: 100%;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 10;
+    box-shadow: 0 0 10px #00000044;
+}
+
+
+.logo .img{
+    margin-left: 20px;
+    object-fit: contain; 
+}
+.menlogo {
+    margin-right: auto;
+}
+.menlogo .menu{
+    background-color: white;
+    display: flex;
+    height: 160px;
+}
+.menlogo img {
+    object-fit: contain;
+}
+.opcoes {
+    display: flex;
+    list-style: none;
+}
+
+.conector {
+    display: inline-block;
+    width: 50px;
+    height: 12px;
+    margin: auto 0;
+    background-color: #00000044;
+}
+
+.cabecalho .separator, .cabecalho .separador-pequeno {
+    width: 3px;
+    height: 30px;
+    background-color: #2F3F9E;
+    margin: auto 20px;
+}
+
+.cabecalho .separador-pequeno {
+    margin: auto 5px;
+}
+
+.invisivel {
+    opacity: 0;
+}
+
+.link, .botao {
+    display: inline-block;
+    cursor: pointer;
+    color: #00000044;
+    font-size: 20px;
+	text-decoration: none;
+	padding: 1rem 2rem;
+	transition: all .3s ease-in-out;  
+    border-radius: 10px;
+    border: 4px solid #00000044;
+}
+
+.selected .link {
+    color: #2F3F9E;
+    border-color: #2F3F9E;
+}
+
+.present .link {
+    color: #2F3F9E;
+    border-color: #2F3F9E;
+    border-style: dashed;
+}
+
+.conector.selected {
+    background-color: #2F3F9E;
+}
+
+.buttons-wrapper {
+    flex-grow: 1;
+}
+
+.buttons-wrapper input {
+    display: inline-block;
+    margin: 0 10px;
+    font-family: 'Bubblegum Sans', cursive;
+    cursor: pointer;
+    font-size: 30px;
+	text-decoration: none;
+	padding: 20px 60px;
+	transition: all .3s ease-in-out;
+    color: white;
+    border-radius: 10px 0 10px 0;
+}
+
+.buttons-wrapper input:hover {
+    transform: scale(1.1);
+}
+
+.buttons-wrapper .next {
+    background-color: #00BB00;
+}
+
+.buttons-wrapper .prev {
+    background-color: orangered;
+}
+
+.components-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    padding: 100px 0;
+    background-color: rgb(68, 114, 196);
+    color: white;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.link1 {
+    font-size: 20px;
+	color:  white;
+	text-decoration: none;
+	
+	transition: all .5s ease-in-out;  
+    border-radius: 10px;
+}
+
+.link1:hover{
+    background-color: #2F3F9E;
+    color:  white;
+    transform: scale(1.1);
+}
+
+.titulo{
+    padding: 5px;
+}
+
+.enviar{
+    background-color: white;
+    color: #2F3F9E;
+    padding: 10px;
+}
+.enviar:hover{
+    background-color: #2F3F9E;
+    color: white;
+    border: 2px solid;
+    
+}
+
+.nome{
+    padding: 10px;
+}
+
+.card {
+    display: inline-block;
+    background-color: white;
+    font-size: 30px;
+    padding: 50px;
+    border-radius: 10px;
+    border: 5px solid brown;
+}
+
+.botao {
+    cursor: pointer;
+    color: #2F3F9E;
+    border-radius: 10px 0 10px 0;
+    border: 4px solid #2F3F9E;
+}
+
+.botao:hover {
+    color: white;
+    background-color: #2F3F9E;
+}
